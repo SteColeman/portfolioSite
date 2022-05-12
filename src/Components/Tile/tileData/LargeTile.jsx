@@ -13,21 +13,28 @@ function LargeTile(props) {
 
     return(
         <div className="largeTile"  key={props.id}>
-            <h1>{props.name}</h1>
-            <h2>Large Tile</h2>
+            <div>
+                <h1>{props.name}</h1>
+            </div>
+
             <div className='largeImageContainer'>
                 <img className="largeTileImage" src={props.imageUrl} alt="" />
             </div>
 
             <div className='linksDescriptionSection'>
                 <div className='LargeLinks'>
-                    <h5>GitHub Repo</h5>
+                    <h3>GitHub Repository</h3>
                     <p>{<a href={props.gitHubLink}>GitHub</a>}</p>
                 </div>
 
                 <div className='largeDescription'>
                     <h3>Description</h3>
                     <p>{props.description}</p>
+                </div>
+
+                <div className="technologyUsed">
+                    <h3>Languages and frameworks used in this project</h3>
+                <p>{props.techUsed}</p>
                 </div>
 
             </div>

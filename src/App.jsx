@@ -13,6 +13,10 @@ function App() {
     <div className="App">
       <Nav />
       <article id="tileSection">
+       <div id='introduction'>
+       <h1>Hello! Im Stephen Coleman</h1>
+        <p>Im a junior front end developer fresh out of university. I am actively looking for front end web development jobs. if you have any available please use the contact me button to get in touch through </p>
+       </div>
       <section id="tileContainer">
         
         {
@@ -24,6 +28,7 @@ function App() {
               imageUrl={tile.imageUrl}
               gitHubLink={tile.gitHubLink}
               frameworks={tile.frameworksUsed}
+              techUsed={tile.techUsed}
             />
           )
         }

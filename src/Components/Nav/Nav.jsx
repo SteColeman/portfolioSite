@@ -4,10 +4,8 @@ function Nav() {
     return(
         <nav>
             <ul>
-                <li><a href="https://google.com">Home</a></li>
-                <li><a href="https://google.com">GitHub</a></li>
-                <li><a href="https://google.com">Contact Me</a></li>
-
+                <li><a href="https://github.com/SteColeman">Contact Me</a></li>
+                <li><a href="mailto:stecoleman1@gmail.com">GitHub</a></li>
             </ul>
         </nav>
     )

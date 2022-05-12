@@ -12,32 +12,31 @@ function Tile(props) {
      */
 
     return(
-            <div className="tile" onClick={clickHandler} key={props.id} style={{backgroundImage: "url(" + props.imageUrl + ")"}}>
+            <div className="tile" onClick={renderLargeTile} key={props.id} style={{backgroundImage: "url(" + props.imageUrl + ")"}}>
                 <div className='tileTitle'>
                 <h1>{props.name}</h1>
                 </div>
-                {/* <div className='imageContainer'>
-                    <img className="tileImage" src={props.imageUrl} alt="" />
-                </div> */}
+                
                 <div className='links'>
                     <h5>GitHub Repo</h5>
                     <p>{props.gitHubLink}</p>
+                    <p>{props.techUsed}</p>
                 </div>
             </div>
     )
 
-    function clickHandler() {
+    function renderLargeTile() {
 
-        // var root = ReactDOM.createRoot(document.getElementsByClassName('tile'))
         ReactDOM.render(
            <div id='largeTileContainer'>
-            <LargeTile 
-            key={props.id}
-            name={props.name}
-            description={props.description}
-            imageUrl={props.imageUrl}
-            gitHubLink={props.gitHubLink}
-            />
+                <LargeTile 
+                key={props.id}
+                name={props.name}
+                description={props.description}
+                imageUrl={props.imageUrl}
+                gitHubLink={props.gitHubLink}
+                techUsed={props.techUsed}
+                />
            </div>, 
             document.getElementById('tileSection'))
         }

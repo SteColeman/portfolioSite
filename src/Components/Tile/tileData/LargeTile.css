@@ -1,20 +1,21 @@
 .largeTile {
-    border: 1px solid red;
-    width: 75%;
-    height: 75%;
-    padding: 0.5rem;
+    width: 55%;
+    height: 85%;
+    padding: 1rem;
     margin: auto;
-    background-color: white;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
 }
 
-.LargeLinks {
-    color: black;
+.LargeLinks > p > a {
+    color: purple;
 }
 
 .largeImageContainer {
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .largeTileImage {
